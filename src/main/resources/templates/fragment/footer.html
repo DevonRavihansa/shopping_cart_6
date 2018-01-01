@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4" lang="en">
+<head>
+</head>
+<body>
+
+<footer th:fragment="footer">
+
+</footer>
+
+<th:block th:fragment="scripts">
+    <script type="text/javascript" th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/popper.js/1.11.1/dist/umd/popper.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/4.0.0-beta/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/app.js?v={time}(time=${#dates.createNow()})}"></script>
+    <script type="text/javascript" th:src="@{/js/cart/services.js?v={time}(time=${#dates.createNow()})}"></script>
+    <script type="text/javascript" th:src="@{/js/cart/controllers.js?v={time}(time=${#dates.createNow()})}"></script>
+</th:block>
+
+</body>
+</html>

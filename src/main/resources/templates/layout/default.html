@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4" lang="en">
+<head>
+    <th:block th:replace="fragment/header :: meta"></th:block>
+    <title th:replace="${view} :: title"></title>
+    <th:block th:replace="fragment/header :: styles"></th:block>
+    <th:block th:replace="fragment/header :: scripts"></th:block>
+</head>
+
+<body ng-app="app">
+
+<div ng-controller="cartCtrl">
+    <nav th:replace="fragment/header :: topNavigation">Navigation</nav>
+
+    <section>
+        <div th:replace="${view} :: content">Page Content</div>
+    </section>
+
+    <footer th:replace="fragment/footer :: footer">Footer</footer>
+</div>
+
+<th:block th:replace="fragment/footer :: scripts"></th:block>
+</body>
+</html>

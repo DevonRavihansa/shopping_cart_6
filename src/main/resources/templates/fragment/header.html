@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4" lang="en">
+<head>
+    <th:block th:fragment="meta">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+    </th:block>
+    <th:block th:fragment="styles">
+        <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/4.0.0-beta/css/bootstrap.min.css}" />
+        <link rel="stylesheet" type="text/css" th:href="@{/webjars/fontawesome/4.7.0/css/font-awesome.min.css}" />
+        <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css?v={time}(time=${#dates.createNow()})}" />
+    </th:block>
+    <th:block th:fragment="scripts">
+        <script type="text/javascript" th:src="@{/webjars/angularjs/1.6.4/angular.min.js}"></script>
+        <script type="text/javascript" th:src="@{/webjars/angularjs/1.6.4/angular-resource.min.js}"></script>
+        <script type="text/javascript" th:src="@{/webjars/angular-ui-router/1.0.3/angular-ui-router.min.js}"></script>
+        <script type="text/javascript" th:src="@{/webjars/angular-file-upload/12.2.13/ng-file-upload-shim.min.js}"></script>
+        <script type="text/javascript" th:src="@{/webjars/angular-file-upload/12.2.13/ng-file-upload.min.js}"></script>
+    </th:block>
+</head>
+<body>
+
+<nav class="" th:fragment="topNavigation">
+
+</nav>
+
+<nav class="" th:fragment="sideNavigation">
+
+</nav>
+
+</body>
+</html>
